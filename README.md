@@ -1,30 +1,24 @@
-# Haenu Planner Client
-새롭게 시작하는 해누플래너 Client Source (Web)
-- Current Link : [https://dev-study.haenu.com](https://dev-study.haenu.com)
+# Haenu Planner Electron
+새롭게 시작하는 해누플래너 Electron Source
 
 ## Tech Stacks
 - React.js
 - React Router
 - Babel
 - Webpack
-- AWS S3
-- Cloudflare
-- Jenkins
+- Electron
 
 ## Other Project
+- Frontend Client : [haenu-planner-client](https://github.com/dokdo2013/haenu-planner-client)
 - Backend Server : [haenu-planner-server](https://github.com/dokdo2013/haenu-planner-server)
 
 ## HOWTO
-### Install & Start Dev Server
+### Install & Start Electron
 ```bash
 npm install
-yarn start
+yarn react-start
 ```
-
-### Deploy
-1. 로컬에서 선 빌드
+react-start를 실행한 후 다른 터미널에 아래 electron-start 명령어를 실행해야 한다.
 ```bash
-yarn build
+yarn electron-start
 ```
-2. 작업 중인 브랜치를 Main으로 Merge
-3. Jenkins에서 자동으로 빌드된 파일을 받아 S3에 업로드
